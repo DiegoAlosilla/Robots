@@ -12,6 +12,8 @@ class Robots(Robot):
     #Funcion para obtener coordenadas
     def get_robot(self, index):
         return self.robots[index]
+    def delete_robot(self, index):
+        self.robots.pop(index)
     #Funcion para actualizar valor del arreglo
     def set_robot(self, index, Robot):
         self.robots[index] = Robot
